@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&family=Jost:wght@600&family=Poppins&family=Roboto:wght@500&family=Rubik:wght@500&family=Source+Sans+3:wght@900&family=Source+Sans+Pro:wght@600&family=The+Nautigal:wght@700&display=swap');
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Cabin', sans-serif;
+}
+.window{
+  width: 300px;
+  height: 350px;
+  border-radius: 12px;
+  background: linear-gradient(45deg,rgba(128, 0, 128, 0.534),white,rgba(0, 0, 255, 0.432),blue);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  z-index: 1000;
+  box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.452),
+  5px 5px 5px rgba(0, 0, 0, 0.452),
+  inset -5px -5px 5px rgba(255, 255, 255, 0.452);
+  /* box-shadow: inset -5px -5px 5px rgba(255, 255, 255, 0.541),
+                                     5px 5px 5px rgba(0, 0, 0, 0.397),
+                                     -5px -5px 5px rgba(255, 255, 255, 0.212); */
+}
+.title{
+  font-size: 50px;
+  color: rgb(0, 0, 0);
+  margin-top: 30px;
+  /* border-bottom: 5px solid rgba(255, 255, 255, 0.336); */
+  text-shadow: -5px -5px 5px rgba(255, 255, 255, 0.352),
+  5px 5px 5px rgba(0, 0, 0, 0.452); 
+  
+}
+#result{
+  width: 100%;
+  height: 20%;
+  background: rgba(255, 255, 255, 0.096);
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 30px;
+  
+  font-size: 45px;
+  text-shadow: -5px -5px 5px rgba(255, 255, 255, 0.2),
+  5px 5px 5px rgba(0, 0, 0, 0.4); 
+  
+}
+#result span{
+  
+}
+#buttons{
+  width: 100%;
+  line-height: 80px;
+  /* background: rgba(255, 255, 255, 0.466); */
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+  
+#buttons button{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: rgba(255, 0, 255, 0.452);
+  border: none;
+  font-size: 20px;
+  box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.452),
+  5px 5px 5px rgba(0, 0, 0, 0.452),
+  inset -5px -5px 5px rgba(255, 255, 255, 0.233);
+  
+  
+}
+#buttons #start{
+  background: rgba(172, 255, 47, 0.8);
+  text-shadow: -5px -5px 5px rgba(255, 255, 255, 0.3),
+  5px 5px 5px rgba(0, 0, 0, 0.5); 
+}
+#buttons #stop{
+  background: rgba(255, 0, 0, 0.9);
+  text-shadow: -5px -5px 5px rgba(255, 255, 255, 0.3),
+  5px 5px 5px rgba(0, 0, 0, 0.5); 
+
+}
+#buttons #reset{
+  background: rgba(255, 0, 255, 0.8);
+  text-shadow: -5px -5px 5px rgba(255, 255, 255, 0.3),
+  5px 5px 5px rgba(0, 0, 0, 0.5); 
+
+}
+
+/* .................................................... */
+.background{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  z-index: 100;
+}
+.frm1{
+  width: 200px;
+  height: 200px;
+  background: magenta;
+  position: absolute;
+  top: 0px;
+  left: 550px;
+  filter: blur(150px);
+
+}
+.frm2{
+  width: 200px;
+  height: 200px;
+  background: mediumvioletred;
+  position: absolute;
+  bottom: 60px;
+  left: 170px;
+  filter: blur(150px);
+}
+.frm5{
+  width: 300px;
+  height: 300px;
+  background: rgb(63, 21, 199);
+  position: absolute;
+  bottom: 0px;
+  right: 370px;
+  filter: blur(150px);
+}
